@@ -5,7 +5,7 @@ const path = require("path");
 const Chat = require("./models/chat.js");
 const methodOverride = require("method-override");
 
-app.set("viewa", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));  // style ko public folder se jorne ke liye
 app.use(express.urlencoded({ extended: true }));
